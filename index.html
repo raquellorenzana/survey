@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--Viewport Meta Tag -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Survey Project</title>
+	<meta charset="utf-8">
+	<!-- Bootstap CSS-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<!-- Author Custom CSS -->
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	
+<div id="container" class="container">
+  <h1>Survey</h1>
+  <h2>Answer all 3 questions, and submit your answers.</h2>
+
+<!-- FORM BEGINS -->
+ <form id="form">
+
+<!-- Question 1 -->
+  <div class="checkbox" id="questionOne">
+    <em>Question 1</em>
+
+    <h2>What language(s) do you speak?</h2>
+
+    <input type="checkbox" name="checkbox" id="checkbox1" value="English">
+    <label for="checkbox1">English</label>
+    <input type="checkbox" name="checkbox" id="checkbox2" value="Spanish">
+    <label for="checkbox2">Spanish</label>
+    <input type="checkbox" name="checkbox" id="checkbox3" value="French">
+    <label for="checkbox3">French</label>
+    <input type="checkbox" name="checkbox" id="checkbox4" value="German">
+    <label for="checkbox4">German</label>
+  </div>
+
+
+  <!-- Question 2 -->
+  <div class="radio" id="questionTwo">
+    <em>Question 2</em>
+    
+    <h2>What is your favorite food?</h2>
+
+      <input type="radio" id="radio1" name="radio" value="Pizza">
+      <label for="radio1">Pizza</label>
+      <input type="radio" id="radio2" name="radio" value="Sushi">
+      <label for="radio2">Sushi</label>
+      <input type="radio" id="radio3" name="radio" value="Salad">
+      <label for="radio3">Salad</label>
+      <input type="radio" id="radio4" name="radio" value="Burrito">
+      <label for="radio4">Burrito</label>
+    
+  </div>
+
+    
+<!-- Question 3 -->
+   <div class="text-input">
+      <em>Question 3</em>
+      <h2>What country would you like to travel to?</h2>
+      <div class="form-group">
+        <select id="questionThree">
+	        <option value="Brazil">Brazil</option>
+	        <option value="Thailand">Thailand</option>
+	        <option value="Greece">Greece</option>
+	        <option value="Australia">Australia</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Submit Button -->
+    <div>
+      <button class="button" id="submit" type="button"> Submit </button>
+    </div>
+  </form>
+ 
+</div>
+
+<!--  -->
+
+	<!-- JQuery -->
+	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<!-- Custom JS -->
+	<script src="js/main.js"></script>
+</body>
+</html>
